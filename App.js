@@ -15,12 +15,12 @@ const App = () => {
             minW="full"
             minH="1/2"
           ></Box>
-          <View mb="24">
+          <View mb="24" _web={{ mb: 4 }}>
             <Text fontSize="4xl" color="white" fontWeight="bold">
               Vocabulary Test
             </Text>
             <Text pl={4} fontSize="md" color="white" fontWeight="bold">
-              You can do it &#10084;
+              You can do it ❤️
             </Text>
           </View>
           <View style={styles.container}>

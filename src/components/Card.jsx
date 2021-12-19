@@ -88,8 +88,9 @@ const Card = ({ word, newWord }) => {
             minW="24"
             py="4"
             rounded="lg"
-            disabled={outOfHints}
+            isDisabled={outOfHints || reveal}
             colorScheme="darkBlue"
+            _web={{ mr: 4 }}
           >
             <Text fontSize="lg" fontWeight="bold" color="white">
               Hint
