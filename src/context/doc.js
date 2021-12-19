@@ -15,10 +15,10 @@ export const useDoc = () => {
 
 export const DocProvider = ({ children }) => {
   const [vocabulary, setVocabulary] = useState(null);
-  console.log('apiUrl :', apiUrl);
+  console.log('apiUrl :', apiURL);
   useEffect(() => {
     async function fetchMyAPI() {
-      get(apiUrl).then(({ data }) => setVocabulary(data));
+      get(apiURL).then(({ data }) => setVocabulary(data));
     }
 
     fetchMyAPI();

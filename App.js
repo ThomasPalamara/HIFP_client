@@ -15,7 +15,7 @@ const App = () => {
             minW="full"
             minH="1/2"
           ></Box>
-          <View mb="24" _web={{ mb: 4 }}>
+          <View mb="24" _web={{ mb: 8 }}>
             <Text fontSize="4xl" color="white" fontWeight="bold">
               Vocabulary Test
             </Text>
