@@ -15,7 +15,7 @@ export const DocProvider = ({ children }) => {
   const [vocabulary, setVocabulary] = useState(null);
   useEffect(() => {
     async function fetchMyAPI() {
-      get('http://hannah-in-france-project.herokuapp.com/vocabulary').then(
+      get('https://hannah-in-france-project.herokuapp.com/vocabulary').then(
         ({ data }) => setVocabulary(data)
       );
     }
