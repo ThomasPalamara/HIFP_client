@@ -1,6 +1,8 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { get } from 'axios';
 
+const apiURL = 'https://hannah-in-france-project.herokuapp.com/vocabulary';
+
 export const DocContext = React.createContext({});
 
 export const useDoc = () => {
@@ -13,11 +15,10 @@ export const useDoc = () => {
 
 export const DocProvider = ({ children }) => {
   const [vocabulary, setVocabulary] = useState(null);
+  console.log('apiUrl :', apiUrl);
   useEffect(() => {
     async function fetchMyAPI() {
-      get('https://hannah-in-france-project.herokuapp.com/vocabulary').then(
-        ({ data }) => setVocabulary(data)
-      );
+      get(apiUrl).then(({ data }) => setVocabulary(data));
     }
 
     fetchMyAPI();
